@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consultoria em IA Generativa</title>
+  <style>
+    /* Reset básico */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+    /* Estilos do Header */
+    header { background: #f8f9fa; padding: 20px 0; }
+    header .container { 
+      max-width: 1200px; margin: 0 auto; 
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 20px;
+    }
+    header h1 { font-size: 24px; }
+    header nav ul { list-style: none; display: flex; gap: 20px; }
+    header nav li { }
+    header nav a { text-decoration: none; color: #333; font-weight: bold; }
+    header nav a:hover { color: #007bff; }
+
+    /* Hero Section */
+    .hero { background: #e9ecef; padding: 100px 20px; text-align: center; }
+    .hero h2 { font-size: 36px; margin-bottom: 20px; }
+    .hero p { font-size: 18px; margin-bottom: 30px; }
+    .hero .button { 
+      background: #007bff; color: #fff; 
+      padding: 15px 30px; border: none; border-radius: 5px;
+      font-size: 18px; font-weight: bold; text-decoration: none;
+      cursor: pointer;
+    }
+    .hero .button:hover { background: #0056b3; }
+
+    /* Seções gerais */
+    section { padding: 60px 20px; }
+    section .container { max-width: 1200px; margin: 0 auto; }
+
+    /* Seção Sobre */
+    .sobre h3 { font-size: 28px; margin-bottom: 20px; }
+    .sobre p { font-size: 16px; }
+
+    /* Seção Serviços */
+    .servicos h3 { font-size: 28px; margin-bottom: 20px; }
+    .servicos ul { list-style: none; padding: 0; }
+    .servicos li { margin-bottom: 10px; }
+    .servicos li strong { color: #007bff; }
+
+    /* Seção Depoimentos */
+    .depoimentos h3 { font-size: 28px; margin-bottom: 20px; }
+    .depoimento { margin-bottom: 30px; }
+    .depoimento p { font-style: italic; }
+    .depoimento .autor { font-weight: bold; margin-top: 5px; }
+
+    /* Seção Agendamento */
+    .agendamento h3 { font-size: 28px; margin-bottom: 20px; }
+    .agendamento p { font-size: 16px; margin-bottom: 20px; }
+
+    /* Botão de Agendamento (pode reutilizar classe .button do hero) */
+    .agendamento .button { 
+      background: #28a745; /* verde para diferenciar, por exemplo */
+      color: #fff; padding: 15px 30px; border: none; border-radius: 5px;
+      font-size: 18px; font-weight: bold; text-decoration: none;
+    }
+    .agendamento .button:hover { background: #1e7e34; }
+
+    /* Seção Contato */
+    .contato h3 { font-size: 28px; margin-bottom: 20px; }
+    .contato p { margin-bottom: 15px; }
+    .contato form { max-width: 400px; display: flex; flex-direction: column; }
+    .contato input, .contato textarea { 
+      padding: 10px; margin-bottom: 10px; 
+      border: 1px solid #ccc; border-radius: 5px;
+      font: inherit;
+    }
+    .contato button { 
+      padding: 12px 20px; border: none; border-radius: 5px;
+      background: #007bff; color: #fff; font-size: 16px; cursor: pointer;
+    }
+    .contato button:hover { background: #0056b3; }
+
+    /* Rodapé */
+    footer { background: #343a40; color: #fff; padding: 20px 0; text-align: center; }
+    footer .container { padding: 0 20px; }
+    footer a { color: #fff; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    footer p { margin: 5px 0; font-size: 14px; }
+
+    /* Responsividade (mobile) */
+    @media (max-width: 600px) {
+      header .container { flex-direction: column; align-items: flex-start; }
+      header nav ul { flex-direction: column; gap: 10px; margin-top: 10px; }
+      .hero { padding: 60px 20px; }
+      .hero h2 { font-size: 28px; }
+      .hero p { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Consultoria em IA Generativa</h1>
+      <nav>
+        <ul>
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+         <!--  <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li> -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h2>Consultoria Especializada em IA Generativa</h2>
+    <p>Transforme seus processos com Inteligência Artificial Generativa.</p>
+    <a href="#agendamento" class="button">Agendar Consulta</a>
+  </section>
+
+  <!-- Sobre -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <h3>Sobre</h3>
+      <p>Com larga experiência em IA Generativa, nosso consultor já ajudou profissionais e empresas a implementarem soluções de ponta. Também oferecemos aulas e workshops para capacitação em IA, tornando a tecnologia acessível e eficaz para você.</p>
+    </div>
+  </section>
+
+  <!-- Serviços Oferecidos -->
+  <section class="servicos" id="servicos">
+    <div class="container">
+      <h3>Serviços Oferecidos</h3>
+      <ul>
+        <li><strong>Tutoria Personalizada:</strong> Aprenda a utilizar IA generativa de forma eficaz para resolver problemas reais.</li>
+        <li><strong>Elaboração de Prompts Complexos:</strong> Criação e otimização de prompts para obter resultados precisos de modelos GPT.</li>
+        <li><strong>Execução de Prompts no DeepResearch:</strong> Criação de relatórios utilizando o modelo mais avançado que existe (o3 - OpenAI).</li>
+        <li><strong>GPTs Customizados:</strong> Apoio no desenvolvimento e treinamento de modelos GPT adaptados às necessidades do seu negócio.</li>
+        <li><strong>Soluções RAG Especializadas:</strong> Desenvolvimento de sistemas de Recuperação + Geração (RAG) para aproveitar os dados da sua organização com IA Generativa, reduzindo a chance de alucinação da IA.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <!-- <section class="depoimentos" id="depoimentos">
+    <div class="container">
+      <h3>Depoimentos</h3>
+      <div class="depoimento">
+        <p>"Excelente consultoria! Conseguimos implementar um chatbot inteligente que otimizou nosso atendimento ao cliente em poucas semanas."</p>
+        <p class="autor">- Joana Silva, Empresária</p>
+      </div>
+      <div class="depoimento">
+        <p>"As sessões de tutoria em IA foram transformadoras. Agora utilizo ferramentas de IA no meu dia a dia no escritório de advocacia."</p>
+        <p class="autor">- Carlos Almeida, Advogado</p>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Agendamento -->
+  <section class="agendamento" id="agendamento">
+    <div class="container">
+      <h3>Agendamento</h3>
+      <p>Pronto para levar sua prática profissional ao próximo nível com IA? Agende uma consulta agora mesmo. Escolha um horário conveniente e nós confirmaremos seu agendamento pelo Outlook.</p>
+      <a href="https://calendly.com/joaolima-senado/55min" class="button">Agendar Consulta via Calendly</a>
+      <!-- Substitua o href acima pelo link real do seu serviço de agendamento (Calendly, Microsoft Bookings, etc.) -->
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <!--<section class="contato" id="contato">
+    <div class="container">
+      <h3>Contato</h3>
+      <p>Entre em contato para tirar dúvidas ou obter mais informações:</p>
+      <form>
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu email" required>
+        <textarea name="mensagem" rows="4" placeholder="Sua mensagem"></textarea>
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+      <p>Ou conecte-se pelas redes sociais: 
+        <a href="#" target="_blank">LinkedIn</a> | <a href="#" target="_blank">Twitter</a>
+      </p> 
+    </div>
+  </section>-->
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Consultoria em IA Generativa. Todos os direitos reservados.</p>
+    <!--   <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p> -->
+    </div>
+  </footer>
+
+</body>
+</html>
